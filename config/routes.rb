@@ -1,8 +1,8 @@
-Rainforest::Application.routes.draw do
-  root "product#index"
-resources :products
-
-  # The priority is based upon order of creation: first created -> highest priority.
+ Rainforest::Application.routes.draw do
+  resources :products
+  resources :users, only: [:new, :create]
+end
+# The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
@@ -26,7 +26,7 @@ resources :products
   #
   #     collection do
   #       get 'sold'
-  #     end
+  #     endT
   #   end
 
   # Example resource route with sub-resources:
@@ -56,4 +56,4 @@ resources :products
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+
