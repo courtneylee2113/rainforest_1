@@ -50,3 +50,6 @@ class ProductsController < ApplicationController
     params.require(:product).permit(:name, :description, :price_in_cents)
   end
 end
+end
+
+
