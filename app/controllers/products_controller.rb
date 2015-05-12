@@ -1,11 +1,15 @@
 class ProductsController < ApplicationController
+def index
+  @products = Product.all
+end
+
 def show
     @product = Product.find(params[:id])
 
-    if current_user
-      @review =@product.reviews.build
-    end
- end
+     if current_user
+       @review = @product.reviews.build
+     end
+  end
 
   def new
     @product = Product.new

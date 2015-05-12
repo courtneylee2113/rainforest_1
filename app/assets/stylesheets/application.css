@@ -1,3 +1,12 @@
+h1{
+	color:yellow;
+ font-size:  60px;
+background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#00667F), to(#009999))}
+
+
+
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
